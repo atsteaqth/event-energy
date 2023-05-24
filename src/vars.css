@@ -1,0 +1,14 @@
+:root {
+    --color-black: #121212;
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Rubik', serif;
+}
+
+.container {
+    width: 1180px;
+    margin: 0 auto;
+}
