@@ -1,6 +1,6 @@
 .callback_phone {
   margin: 24px 0 24px 48px;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   box-shadow: 0 0 24px rgba(130, 38, 196, 0.32);
   border-radius: 40px;
   border: none;
@@ -10,6 +10,34 @@
   font-size: 14px;
   line-height: 24px;
   color: var(--color-black);
+}
+.callback_phone .menu {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .callback_phone {
+    margin: 24px 0 24px 40px;
+  }
+  .menu {
+    display: none;
+  }
+}
+@media screen and (max-width: 320px) {
+  .callback_phone {
+    width: 32px;
+    height: 32px;
+    margin: 27px 0 24px 0;
+    box-shadow: none;
+    background: #EFEFEF;
+    border-radius: 8px;
+  }
+  .callback_phone span {
+    display: none;
+  }
+  .callback_phone .menu {
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=Button.module.css.map */

@@ -1,0 +1,38 @@
+@import "../../mixins";
+
+
+
+.form {
+
+  @include to(767px) {
+    width: 187px;
+    height: 42px;
+    margin-bottom: 15px;
+    background-size: 17px;
+    background-position: 16px;
+    padding: 0 0 0 43px;
+  }
+  margin-bottom: 24px;
+  width: 560px;
+  height: 48px;
+  border: 1px solid #606060;
+  border-radius: 40px;
+  background-repeat: no-repeat;
+  background-position: 26px;
+  padding: 0 0 0 58px;
+  &:focus, &:active {
+    outline-color: mediumvioletred;
+  }
+
+
+}
+.form_name {
+  background-image: url("../../assets/icons/name-form.svg");
+}
+.form_tel {
+  background-image: url("../../assets/icons/tel-form.svg");
+}
+.form_mail {
+  background-image: url("../../assets/icons/mail-form.svg");
+}
+

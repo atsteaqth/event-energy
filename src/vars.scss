@@ -1,0 +1,75 @@
+:root {
+    --color-black: #121212;
+}
+
+body {
+    margin: 0;
+    font-family: 'Rubik', serif;
+}
+
+.container {
+    width: 1180px;
+    margin: 0 auto;
+
+    @media screen and (min-width: 320px) {
+        max-width: calc( 100% - 40px);
+    }
+
+    @media screen and (min-width: 768px) {
+        max-width: 688px;
+    }
+
+    @media screen and (min-width: 1366px) {
+        max-width: 1180px;
+    }
+
+    @media screen and (min-width: 1920px) {
+        max-width: 1180px;
+    }
+}
+
+h1 {
+
+}
+
+h2 {
+    color:var(--color-black);
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+    font-size: 32px;
+}
+
+h3{
+
+}
+
+
+h4 {
+
+}
+
+
+.hamburger {
+    .hamburger-box {
+        width: 20px;
+        height: 12px;
+        .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+            width: 20px;
+            height: 2px;
+            background: linear-gradient(79.07deg, #8225C4 0.56%, #B516A8 35.64%, #D80C95 69.58%, #F50081 110.99%);
+            border-radius: 4px;
+            margin-top: 0;
+        }
+
+        .hamburger-inner::before {
+            top: -5px;
+        }
+        .hamburger-inner::after {
+            top: -10px;
+        }
+    }
+    &.hamburger--collapse.is-active .hamburger-inner {
+        transform: translate3d(0, -5px, 0) rotate(-45deg);
+    }
+}

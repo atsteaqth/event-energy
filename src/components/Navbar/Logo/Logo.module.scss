@@ -1,0 +1,13 @@
+@import "../../../mixins";
+
+.logo_style {
+  img {
+    @include to(767px) { // размеры начиная с 767px и меньше
+      width: 88px;
+      height: 23px;
+    }
+    width: 144px;
+    height: 38px;
+  }
+  filter: grayscale(1);
+}

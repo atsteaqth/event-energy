@@ -1,0 +1,62 @@
+.form_wrapper {
+  width: 780px;
+  height: 567px;
+  border: 2px solid #121212;
+  border-radius: 16px;
+  background-image: url("../../assets/images/energy tab.png");
+  background-repeat: no-repeat;
+  background-position: 3px 99px, center;
+  position: relative;
+}
+.form_wrapper .close_form {
+  position: absolute;
+  right: 30px;
+  top: 40px;
+}
+.form_wrapper .form_container {
+  width: 620px;
+  margin: 0 auto;
+}
+.form_wrapper .application h2 {
+  margin: 64px 0 16px 0;
+}
+.form_wrapper .form_fill {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  color: var(--color-black);
+  margin-bottom: 40px;
+}
+.form_wrapper .form_field {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--color-black);
+  margin-bottom: 40px;
+}
+.form_wrapper .form_conditions {
+  display: flex;
+  align-items: center;
+}
+.form_wrapper .form_conditions .form_button {
+  margin-right: 24px;
+}
+.form_wrapper .form_conditions .form_button button {
+  width: 186px;
+  height: 48px;
+  background: linear-gradient(79.07deg, #8225C4 0.56%, #B516A8 35.64%, #D80C95 69.58%, #F50081 110.99%);
+  border-radius: 40px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #FFFFFF;
+  text-align: center;
+}
+.form_wrapper .condition {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--color-black);
+}
+
+/*# sourceMappingURL=Form.module.css.map */

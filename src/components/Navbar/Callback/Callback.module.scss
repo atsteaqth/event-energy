@@ -1,0 +1,31 @@
+@import "../../../mixins";
+
+.number_call {
+  line-height: 24px;
+  font-weight: 700;
+  font-size: 14px;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  img {
+    @include to(767px) {
+      width: 20px;
+      height: 20px;
+      margin: -5px 0 0 -38px;
+    }
+    @media screen and (min-width: 1366px) {
+      margin: -3px 0 0 -47px;
+    }
+    margin: -2px 0 0 -47px;
+
+  }
+  span {
+    @include to(767px) {
+      display: none;
+
+    }
+
+  }
+
+}

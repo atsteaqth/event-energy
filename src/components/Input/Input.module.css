@@ -1,0 +1,24 @@
+.form {
+  margin-bottom: 24px;
+  width: 560px;
+  height: 48px;
+  border: 1px solid #606060;
+  border-radius: 40px;
+  background-repeat: no-repeat;
+  background-position: 26px;
+  padding: 0 0 0 58px;
+}
+
+.form_name {
+  background-image: url("../../assets/icons/name-form.svg");
+}
+
+.form_tel {
+  background-image: url("../../assets/icons/tel-form.svg");
+}
+
+.form_mail {
+  background-image: url("../../assets/icons/mail-form.svg");
+}
+
+/*# sourceMappingURL=Input.module.css.map */

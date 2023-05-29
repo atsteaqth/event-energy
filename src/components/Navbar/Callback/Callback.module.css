@@ -1,3 +1,34 @@
-
+.number_call {
+  position: relative;
+  margin-top: 36px;
+  line-height: 24px;
+  font-weight: 700;
+  font-size: 14px;
+  margin-left: auto;
+}
+.number_call img {
+  position: absolute;
+  margin: -2px 0 0 -47px;
+}
+@media screen and (min-width: 320px) {
+  .number_call img {
+    width: 20px;
+    height: 20px;
+    margin: -5px 0 0 -38px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .number_call img {
+    margin: -3px 0 0 -47px;
+  }
+}
+.number_call span {
+  display: none;
+}
+@media screen and (min-width: 320px) {
+  .number_call span {
+    display: block;
+  }
+}
 
 /*# sourceMappingURL=Callback.module.css.map */

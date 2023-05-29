@@ -1,0 +1,77 @@
+@import "../../../mixins";
+
+.menu_wrapper {
+  @include to(1920px) {
+    display: none;
+  }
+  @include to(767px) {
+    display: none;
+  }
+  @include to(320px) {
+    display: block;
+  }
+  transform: translateX(100%);
+  position: absolute;
+  top: 8px;
+  left: 68px;
+  width: 252px;
+  height: 560px;
+  background-image: url("../../../assets/images/energy_mob.png");
+  background-repeat: no-repeat;
+  background-color: white;
+  background-position: 0 345px, bottom;
+  transition: 300ms;
+
+  .menu_container {
+    width: 202px;
+    margin: 0 auto;
+  }
+
+  .menu_number {
+    margin-top: 17px;
+    background: linear-gradient(79.07deg, #8225C4 0.56%, #B516A8 35.64%, #D80C95 69.58%, #F50081 110.99%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 60px;
+  }
+
+  .menu_programs {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 37px;
+  }
+
+  .menu_list {
+    margin-bottom: 107px;
+
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .menu_button {
+
+    width: 202px;
+    height: 48px;
+    background: linear-gradient(79.07deg, #8225C4 0.56%, #B516A8 35.64%, #D80C95 69.58%, #F50081 110.99%);
+    border-radius: 40px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+
+  }
+}
+
+.menu_active {
+  transform: translateX(0);
+}
+
+

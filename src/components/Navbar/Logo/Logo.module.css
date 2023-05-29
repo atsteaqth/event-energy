@@ -1,0 +1,13 @@
+.logo_style {
+  margin: 29px 0 29px 0;
+  filter: grayscale(1);
+}
+
+@media screen and (max-width: 320px) {
+  .logo_style img {
+    width: 88px;
+    height: 23px;
+  }
+}
+
+/*# sourceMappingURL=Logo.module.css.map */

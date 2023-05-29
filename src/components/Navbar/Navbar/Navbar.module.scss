@@ -1,12 +1,19 @@
+@import "../../../mixins";
+
 .navbar_wrapper {
+  @include to(1365px) {
+    height: 88px;
+    gap: 40px;
+  }
+  @include to(767px) {
+    height: 64px;
+    gap: 0;
+  }
+
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 96px;
+  gap: 48px;
 
-  .logo_style {
-    margin: 29px 0 29px 0;
-    filter:grayscale(1);
-  }
-  .number_call {
-
-  }
 }

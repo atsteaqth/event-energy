@@ -1,7 +1,8 @@
 import React  from "react";
-import './vars.css'
+import './vars.scss'
 import './fonts.css'
 import Navbar from "./components/Navbar/Navbar/Navbar";
+
 
 function App() {
   return (

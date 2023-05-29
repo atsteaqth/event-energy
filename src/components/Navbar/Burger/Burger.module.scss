@@ -1,0 +1,16 @@
+@import "../../../mixins";
+
+.burger_wrapper {
+  @include from(768px) {
+    display: none;
+  }
+  width: 32px;
+  height: 32px;
+  background: #EFEFEF;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.burger {
+  padding: 6px;
+}

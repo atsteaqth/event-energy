@@ -1,11 +1,11 @@
 import React from 'react';
 import classes from "./Button.module.scss"
 
-const Button = () => {
+const Button = (props) => {
     return (
-        <div>
-            <button className={classes.callback_phone}>связаться с нами</button>
-        </div>
+            <button onClick={props.action} className={classes.callback_phone}>
+                <span>связаться с нами</span>
+            </button>
     );
 };
 

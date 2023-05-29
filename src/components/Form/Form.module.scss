@@ -1,0 +1,126 @@
+@import "../../mixins";
+
+
+.form_wrapper {
+  @include to(1920px) {
+    width: 676px;
+    height: 535px;
+    .form_fill_320 {
+      display: none;
+    }
+  }
+  width: 780px;
+  height: 567px;
+  border: 2px solid #121212;
+  border-radius: 16px;
+  background-image: url("../../assets/images/energy tab.png");
+  background-repeat: no-repeat;
+  background-position: 0 99px, center;
+  position: relative;
+  background-color: white;
+  .close_form {
+    position: absolute;
+    right: 30px;
+    top: 40px;
+  }
+  .form_container {
+    width: 620px;
+    margin: 0 auto;
+  }
+  .application {
+    h2{
+      margin: 64px 0 16px 0;
+    }
+  }
+  .form_fill {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    color:var(--color-black);
+    margin-bottom: 40px;
+  }
+  .form_field {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--color-black);
+    margin-bottom: 40px;
+  }
+  .form_conditions {
+    display: flex;
+    align-items: center;
+    .form_button {
+      margin-right: 24px;
+      button {
+        width: 186px;
+        height: 48px;
+        background: linear-gradient(79.07deg, #8225C4 0.56%, #B516A8 35.64%, #D80C95 69.58%, #F50081 110.99%);
+        border-radius: 40px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 24px;
+        color: #FFFFFF;
+        text-align: center;
+        border: none;
+      }
+    }
+  }
+  .condition {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--color-black);
+    a {
+      color: mediumvioletred;
+    }
+  }
+  @include to(767px) {
+    width: 276px;
+    height: 546px;
+    background-image: none;
+    .form_container {
+      width: 232px;
+      margin: 0 auto;
+    }
+    .close_form img {
+      position: absolute;
+      height: 12px;
+      width: 12px;
+      right: -11px;
+      top: -21px;
+    }
+    .application {
+      h2{
+        margin: 24px 0 8px 0;
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: -0.02em;
+      }
+    }
+    .form_fill {
+      display: none;
+    }
+    .form_fill_320 {
+      display: block;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 24px;
+      color:var(--color-black);
+      margin-bottom: 24px;
+    }
+    .form_field {
+      margin-bottom: 24px;
+    }
+    .form_conditions {
+      flex-direction: column;
+      justify-content: center;
+      .form_button {
+        margin: 0 0 32px 0;
+        button {
+          width: 228px;
+          height: 48px;
+        }
+      }
+    }
+  }
+}

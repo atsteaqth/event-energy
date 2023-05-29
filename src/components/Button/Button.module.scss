@@ -1,6 +1,25 @@
+@import "../../mixins";
+
 .callback_phone {
-  margin: 24px 0 24px 48px;
-  background: #FFFFFF;
+  @include to(767px) {
+    display: none;
+  }
+  ////@include to(320px) {
+  ////  width: 32px;
+  ////  height: 32px;
+  ////  box-shadow: none;
+  ////  background: #EFEFEF;
+  ////  border-radius: 8px;
+  ////  //span {
+  ////  //  display: none;
+  ////  //}
+  ////  //.menu {
+  ////  //  display: block;
+  ////  //}
+  //}
+
+
+  background-color: #FFFFFF;
   box-shadow: 0 0 24px rgba(130, 38, 196, 0.32);
   border-radius: 40px;
   border: none;
@@ -9,7 +28,14 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 24px;
-  color:var(--color-black);
+  color: var(--color-black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .menu {
+    display: none;
+  }
 }
+
 
 
